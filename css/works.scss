@@ -1,0 +1,121 @@
+$headerbg:#5b56bd;
+$headerlogo:#dcdfed;
+$sectionbg:#e4ecff;
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: space-between;
+}
+.header{
+    background:$headerbg;
+    height: 750px; width: 300px;
+}
+li{
+    list-style: none;
+}
+.header__logo{
+    text-align: center;
+    padding-top: 30%;
+    h1{
+        font-size: 25px;
+        font-family: 'Julius Sans One', sans-serif;
+        font-weight: 300;
+        color: $headerlogo;
+    }
+    p{
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 20px;
+        color: $headerlogo;
+    }
+}
+.header__img{
+    text-align: center;
+    padding-top: 50px;
+    img{
+        width: 80%;
+        transition: .3s;
+        border-bottom-right-radius:60px;
+    }
+    img:hover{
+        transform: scale(1.1);
+    }
+}
+.header__soc{
+    text-align: center;
+    padding-top: 50px;
+    img{
+        margin-left: 10px;
+        transition: .3s;
+    }
+    img:hover{
+        transform: scale(1.1);
+    }
+    .tg{
+        width: 9%;
+    }
+}
+// навигация
+section{
+    background: $sectionbg;
+    width: 100%;
+    padding-top:5%;
+    position: relative;
+}
+nav{     
+    position: absolute;
+    left: 20px;
+    .main_menu{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    a{
+        padding-left: 20px;
+        font-size: 20px;
+        font-family: 'Julius Sans One', sans-serif;
+        text-decoration: none;
+        color: $headerbg;
+        transition: .3s;
+    }
+    .aboutme_logo{
+        position: relative;
+    }
+    .aboutme_logo::after{
+        position: absolute;
+        width: 100px;
+        content: '';
+        height: 1.5px;
+        left: 20px;
+        top: 25px;
+        background: $headerbg;
+    }
+}
+// works
+.aboutme_text{
+    text-align: center;
+    position: relative;
+    font-family: 'Julius Sans One', sans-serif;
+    color: $headerbg;
+    font-size: 25px;
+    padding-top: 20px;
+    
+}
+.works__flex{
+    display: flex;
+    justify-content: center;
+}
+.work{
+    padding-top: 30px; 
+    width: 200px; height: 200px;
+    img{
+        border-radius: 5px;
+        width: 100%;
+        transition: .3s;
+        height: 100%;
+    }
+    img:hover{
+        transform: scale(1.1);
+    }
+}

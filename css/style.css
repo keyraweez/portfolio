@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header {
+  background: #5b56bd;
+  height: 750px;
+  width: 300px;
+}
+
+li {
+  list-style: none;
+}
+
+.header__logo {
+  text-align: center;
+  padding-top: 30%;
+}
+.header__logo h1 {
+  font-size: 25px;
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: 300;
+  color: #dcdfed;
+}
+.header__logo p {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
+  color: #dcdfed;
+}
+
+.header__img {
+  text-align: center;
+  padding-top: 50px;
+}
+.header__img img {
+  width: 80%;
+  -webkit-transition: .3s;
+  transition: .3s;
+  border-bottom-right-radius: 60px;
+}
+.header__img img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.header__soc {
+  text-align: center;
+  padding-top: 50px;
+}
+.header__soc img {
+  margin-left: 10px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+.header__soc img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.header__soc .tg {
+  width: 9%;
+}
+
+section {
+  background: #e4ecff;
+  width: 100%;
+  padding-top: 5%;
+  position: relative;
+}
+
+nav {
+  position: absolute;
+  left: 20px;
+}
+nav .main_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+nav a {
+  padding-left: 20px;
+  font-size: 20px;
+  font-family: 'Julius Sans One', sans-serif;
+  text-decoration: none;
+  color: #5b56bd;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+nav .aboutme_logo {
+  position: relative;
+}
+nav .aboutme_logo::after {
+  position: absolute;
+  width: 100px;
+  content: '';
+  height: 1.5px;
+  left: 20px;
+  top: 25px;
+  background: #5b56bd;
+}
+
+.aboutme__main {
+  position: relative;
+  text-align: center;
+}
+
+.aboutme__main {
+  left: 10px;
+  position: absolute;
+  top: 30%;
+}
+.aboutme__main p {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 23px;
+}
+.aboutme__main a {
+  text-transform: uppercase;
+}
+.aboutme__main a:active {
+  color: #e4ecff;
+}
